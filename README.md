@@ -8,11 +8,10 @@ Pour jouer Flappy Bird il suffit de:<br>
 git clone https://github.com/sarastef/flappyBird.git
 Lancer le fichier index.html sur votre navigateur préféré.
 ```
-## GAME: 
+## GAME 
 ![GAME](img/game.png)
 
 ## Live FlappyBird GAME
-
 [DEMO](http://flappybirdgame.tp.mmi-lepuy.fr/)
 
 
