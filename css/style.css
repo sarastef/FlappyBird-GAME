@@ -1,0 +1,134 @@
+@font-face {
+            font-family: "FB";
+            src: url("../fonts/fb.woff") format('woff');
+}
+
+*
+{
+  padding:0px;
+  margin:0px;
+}
+
+
+body {
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #272c31; 
+    margin-top: 8%;   
+    
+
+}
+h1{
+   height: 50px;
+   font-family: 'FB', cursive;
+   color:white;
+}
+
+.container {
+    position: relative;
+    height: 500px;
+    width: 550px;
+    /*width: 100%;*/
+    background:url('../img/background2.png') no-repeat center top ;
+    background-size:contain;
+    /*margin-left: 4%;
+    overflow: hidden;*/
+   
+   
+}
+
+#bird {
+    position: absolute;
+    background: url('../img/bird2.png');
+    height: 28px;
+    width: 40px;
+    background-size:100%;
+    top: 30%;
+    left: 35%;
+    animation: birdVol 0.2s steps(3, end) infinite alternate;
+    transition: transform 0.3s;
+}
+
+@keyframes birdVol {  
+  0% {background-position: 0 84px;}
+  100% {background-position: 0 0;}
+}
+/* Obstacles */
+
+
+.pole {
+    position: absolute;
+    height: 150px;
+    width: 70px;
+    right: 3%;
+    
+}
+
+#pipe1 {
+    top: 0;   
+    background:url('../img/pipe2.png') no-repeat bottom;
+    background-size:cover;
+    
+}
+
+#pipe2 {
+    bottom: 0;
+    background:url('../img/pipe1.png') no-repeat top;
+    background-size:cover;
+}
+
+#score_div {
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    font-family: 'FB', cursive;
+    position: absolute;
+    top:10%;
+    left: 25%;
+    right: 25%;
+    z-index: 4;
+    
+}
+p{
+  font-size: 1.5em;
+  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+}
+#gameOver{
+  
+  position:absolute;
+  text-align:center;
+  left: 25%;
+  right: 25%;
+  top:30%;
+  transition:all 2s;
+  opacity:0;
+  z-index:-100;
+  
+}
+@media (max-width: 768px){
+
+  #container {
+     
+      background-size:cover;
+      width:100%;
+     
+  }
+}
+
+
+
+/*
+#restart_btn {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: fuchsia;
+    color: white;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    
+*/
